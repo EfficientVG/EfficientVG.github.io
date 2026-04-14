@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Efficient Visual Generation | ECCV 2026 Workshop</title>
+    <meta name="description"
+        content="Efficient Visual Generation (EVG): the ECCV 2026 workshop on efficient generative models for visual and multimodal generation.">
+    <meta name="keywords"
+        content="ECCV 2026, Efficient Visual Generation, EVG, Generative Models, Multimodal Generation, Video Generation, World Models">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Efficient Visual Generation | ECCV 2026 Workshop">
+    <meta property="og:description"
+        content="The ECCV 2026 workshop on efficient generative models for visual and multimodal generation.">
+    <meta property="og:url" content="https://avgen123.github.io/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Efficient Visual Generation | ECCV 2026 Workshop">
+    <meta name="twitter:description"
+        content="The ECCV 2026 workshop on efficient generative models for visual and multimodal generation.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrapper site-header-inner">
+            <a class="brand" href="#top" aria-label="Efficient Visual Generation home">
+                <span class="brand-mark">EVG</span>
+                <span class="brand-copy">
+                    <strong>Efficient Visual Generation</strong>
+                    <small>ECCV 2026 Workshop</small>
+                </span>
+            </a>
+
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#overview">Overview</a>
+                <a href="#topics">Topics</a>
+                <a href="#speakers">Speakers</a>
+                <a href="#organizers">Organizers</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="wrapper hero-grid hero-grid-single">
+                <div class="hero-copy">
+                    <p class="eyebrow">ECCV 2026 Official Workshop</p>
+                    <h1>Efficient Visual Generation</h1>
+                    <p class="hero-lede">
+                        <span class="hero-lede-line">A workshop on efficient generative models for visual and multimodal
+                            generation,</span>
+                        <span class="hero-lede-line">spanning lightweight architectures, post-training methods, scalable
+                            deployment,</span>
+                        <span class="hero-lede-line">real-time inference, long video systems, and world model
+                            applications.</span>
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#topics">Explore Topics</a>
+                        <a class="button button-secondary" href="#speakers">Meet Speakers</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="overview">
+            <div class="wrapper">
+                <div class="section-intro">
+                    <p class="eyebrow">Overview</p>
+
+                </div>
+
+                <div class="overview-grid overview-grid-single">
+                    <article class="panel">
+                        <p>
+                            In recent years, visual generation has advanced rapidly and reshaped research at major
+                            computer vision conferences such as ECCV, ICCV, and CVPR. While generative models can now
+                            produce compelling images and videos, making them efficient remains a key bottleneck as
+                            compute, latency, and energy constraints increasingly matter.
+                        </p>
+                        <p>
+                            Efficient visual generative models are essential for scalable, real-time applications
+                            across image and video generation, XR, gaming, design, and creative tooling. In practice,
+                            these systems must run across diverse environments, ranging from edge devices and mobile
+                            platforms to cloud services and interactive production pipelines.
+                        </p>
+                        <p>
+                            The urgency has become even more pronounced with the rise of video generation and world
+                            models. Compared with image synthesis, long-horizon video generation places far greater
+                            pressure on compute, memory, and bandwidth, while world models introduce additional demands
+                            from real-time interaction, long-context reasoning, and repeated rollouts.
+                        </p>
+                        <p>
+                            As generative systems move from research prototypes to product-facing deployments,
+                            efficiency is no longer just an optimization target. It becomes a core enabler that
+                            determines feasibility, responsiveness, operating cost, and energy usage in
+                            latency-sensitive
+                            and resource-constrained settings.
+                        </p>
+                        <p>
+                            EVG highlights architectural innovation, data-efficient learning, resource-aware inference,
+                            and deployment-ready optimization strategies that can accelerate the adoption of generative
+                            models in real-world applications without compromising output quality and controllability.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="topics">
+            <div class="wrapper">
+                <div class="section-intro">
+                    <p class="eyebrow">Workshop Themes</p>
+                    <h2>What the workshop will cover</h2>
+
+                </div>
+
+                <div class="topics-grid">
+                    <article class="topic-card">
+                        <p class="topic-number">01</p>
+                        <h3>Efficient Model Architectures</h3>
+                        <p>
+                            Architectures that reduce compute and memory without sacrificing generative quality across
+                            image, video, and multimodal generation.
+                        </p>
+                    </article>
+
+                    <article class="topic-card">
+                        <p class="topic-number">02</p>
+                        <h3>Efficient Training and Post-Training</h3>
+                        <p>
+                            Training methods, post-training, and finetuning strategies that improve adaptation
+                            efficiency
+                            and reduce the cost of scaling generative systems.
+                        </p>
+                    </article>
+
+                    <article class="topic-card">
+                        <p class="topic-number">03</p>
+                        <h3>Inference and Deployment</h3>
+                        <p>
+                            Distillation, quantization, pruning, and systems optimization for faster inference, lower
+                            latency, and practical deployment across platforms.
+                        </p>
+                    </article>
+
+                    <article class="topic-card">
+                        <p class="topic-number">04</p>
+                        <h3>Application-Specific Efficiency</h3>
+                        <p>
+                            Efficient solutions for streaming, interactive, long-video generation, high-resolution
+                            synthesis, and emerging world-model applications.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="speakers">
+            <div class="wrapper">
+                <div class="section-intro">
+                    <p class="eyebrow">Invited Speakers</p>
+                    <h2>Confirmed speakers</h2>
+
+                </div>
+
+                <div class="people-grid speaker-grid">
+                    <article class="person-card">
+                        <a class="person-media" href="https://chechiklab.biu.ac.il/~gal/" target="_blank"
+                            rel="noreferrer" aria-label="Gal Chechik homepage">
+                            <img class="person-photo" src="assets/people/gal.jpg" alt="Portrait of Gal Chechik"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <span class="person-status">Confirmed Speaker</span>
+                            <h3><a class="person-name-link" href="https://chechiklab.biu.ac.il/~gal/" target="_blank"
+                                    rel="noreferrer">Gal Chechik</a></h3>
+                            <p class="person-role">Professor, Bar-Ilan University; Sr. Director, NVIDIA Research, Israel
+                            </p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://chechiklab.biu.ac.il/~gal/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <a class="person-media" href="https://zhenxuan00.github.io/" target="_blank" rel="noreferrer"
+                            aria-label="Chongxuan Li homepage">
+                            <img class="person-photo" src="assets/people/chongxuan.png" alt="Portrait of Chongxuan Li"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <span class="person-status">Confirmed Speaker</span>
+                            <h3><a class="person-name-link" href="https://zhenxuan00.github.io/" target="_blank"
+                                    rel="noreferrer">Chongxuan Li</a></h3>
+                            <p class="person-role">Associate Professor, Renmin University of China</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://zhenxuan00.github.io/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <a class="person-media" href="https://nmboffi.github.io/" target="_blank" rel="noreferrer"
+                            aria-label="Nicholas M. Boffi homepage">
+                            <img class="person-photo" src="assets/people/nicholas.png"
+                                alt="Portrait of Nicholas M. Boffi" loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <span class="person-status">Confirmed Speaker</span>
+                            <h3><a class="person-name-link" href="https://nmboffi.github.io/" target="_blank"
+                                    rel="noreferrer">Nicholas M. Boffi</a></h3>
+                            <p class="person-role">Assistant Professor, CMU, USA</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://nmboffi.github.io/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <a class="person-media" href="https://www.xunhuang.me/" target="_blank" rel="noreferrer"
+                            aria-label="Xun Huang homepage">
+                            <img class="person-photo" src="assets/people/xun.jpg" alt="Portrait of Xun Huang"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <span class="person-status">Confirmed Speaker</span>
+                            <h3><a class="person-name-link" href="https://www.xunhuang.me/" target="_blank"
+                                    rel="noreferrer">Xun Huang</a></h3>
+                            <p class="person-role">Research Scientist and entrepreneur; formerly Adobe Research, CMU,
+                                and NVIDIA</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://www.xunhuang.me/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <a class="person-media" href="https://huanwang.tech/" target="_blank" rel="noreferrer"
+                            aria-label="Huan Wang homepage">
+                            <img class="person-photo" src="assets/people/huan.png" alt="Portrait of Huan Wang"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <span class="person-status">Organizer Talk</span>
+                            <h3><a class="person-name-link" href="https://huanwang.tech/" target="_blank"
+                                    rel="noreferrer">Huan Wang</a></h3>
+                            <p class="person-role">Assistant Professor, Westlake University, China</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://huanwang.tech/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="organizers">
+            <div class="wrapper">
+                <div class="section-intro">
+                    <p class="eyebrow">Organizers</p>
+
+                </div>
+
+                <div class="people-grid organizers-grid">
+                    <article class="person-card person-card-compact">
+                        <a class="person-media" href="https://albert0147.github.io/" target="_blank" rel="noreferrer"
+                            aria-label="Shiqi Yang homepage">
+                            <img class="person-photo" src="assets/people/shiqi.jpg" alt="Portrait of Shiqi Yang"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <h3><a class="person-name-link" href="https://albert0147.github.io/" target="_blank"
+                                    rel="noreferrer">Shiqi Yang</a></h3>
+                            <p class="person-role">Team Leader and Research Scientist, SB Intuitions, SoftBank, Japan
+                            </p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://albert0147.github.io/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card person-card-compact">
+                        <a class="person-media" href="https://sen-mao.github.io/" target="_blank" rel="noreferrer"
+                            aria-label="Senmao Li homepage">
+                            <img class="person-photo" src="assets/people/senmao.png" alt="Portrait of Senmao Li"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <h3><a class="person-name-link" href="https://sen-mao.github.io/" target="_blank"
+                                    rel="noreferrer">Senmao Li</a></h3>
+                            <p class="person-role">PhD Student, Nankai University, China</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://sen-mao.github.io/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card person-card-compact">
+                        <a class="person-media" href="https://kellyyutonghe.github.io/" target="_blank" rel="noreferrer"
+                            aria-label="Yutong He homepage">
+                            <img class="person-photo" src="assets/people/yutong.jpg" alt="Portrait of Yutong He"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <h3><a class="person-name-link" href="https://kellyyutonghe.github.io/" target="_blank"
+                                    rel="noreferrer">Yutong He</a></h3>
+                            <p class="person-role">PhD Student, CMU, USA</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://kellyyutonghe.github.io/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card person-card-compact">
+                        <a class="person-media" href="https://sauravjha.com.np/" target="_blank" rel="noreferrer"
+                            aria-label="Saurav Jha homepage">
+                            <img class="person-photo" src="assets/people/saurav.jpg" alt="Portrait of Saurav Jha"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <h3><a class="person-name-link" href="https://sauravjha.com.np/" target="_blank"
+                                    rel="noreferrer">Saurav Jha</a></h3>
+                            <p class="person-role">IVADO Postdoctoral Researcher, MILA, Canada</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://sauravjha.com.np/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card person-card-compact">
+                        <a class="person-media" href="https://wangkai930418.github.io/" target="_blank" rel="noreferrer"
+                            aria-label="Kai Wang homepage">
+                            <img class="person-photo" src="assets/people/kai.jpg" alt="Portrait of Kai Wang"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <h3><a class="person-name-link" href="https://wangkai930418.github.io/" target="_blank"
+                                    rel="noreferrer">Kai Wang</a></h3>
+                            <p class="person-role">Assistant Professor, City University of Hong Kong, Dongguan, China
+                            </p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://wangkai930418.github.io/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card person-card-compact">
+                        <a class="person-media" href="https://huanwang.tech/" target="_blank" rel="noreferrer"
+                            aria-label="Huan Wang homepage">
+                            <img class="person-photo" src="assets/people/huan.png" alt="Portrait of Huan Wang"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <h3><a class="person-name-link" href="https://huanwang.tech/" target="_blank"
+                                    rel="noreferrer">Huan Wang</a></h3>
+                            <p class="person-role">Assistant Professor, Westlake University, China</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://huanwang.tech/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card person-card-compact">
+                        <a class="person-media" href="https://yaxingwang.github.io/" target="_blank" rel="noreferrer"
+                            aria-label="Yaxing Wang homepage">
+                            <img class="person-photo" src="assets/people/yaxing.jpg" alt="Portrait of Yaxing Wang"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <h3><a class="person-name-link" href="https://yaxingwang.github.io/" target="_blank"
+                                    rel="noreferrer">Yaxing Wang</a></h3>
+                            <p class="person-role">Professor, Jilin University, China</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://yaxingwang.github.io/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card person-card-compact">
+                        <a class="person-media" href="http://lamp.cvc.uab.es/" target="_blank" rel="noreferrer"
+                            aria-label="Joost van de Weijer homepage">
+                            <img class="person-photo" src="assets/people/joost.png"
+                                alt="Portrait of Joost van de Weijer" loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <h3><a class="person-name-link" href="http://lamp.cvc.uab.es/" target="_blank"
+                                    rel="noreferrer">Joost van de Weijer</a></h3>
+                            <p class="person-role">Group Leader, CVC, Autonomous University of Barcelona, Spain</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="http://lamp.cvc.uab.es/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card person-card-compact">
+                        <a class="person-media" href="https://disi.unitn.it/~sebe/" target="_blank" rel="noreferrer"
+                            aria-label="Nicu Sebe homepage">
+                            <img class="person-photo" src="assets/people/nicu.png" alt="Portrait of Nicu Sebe"
+                                loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <h3><a class="person-name-link" href="https://disi.unitn.it/~sebe/" target="_blank"
+                                    rel="noreferrer">Nicu Sebe</a></h3>
+                            <p class="person-role">Professor, University of Trento, Italy</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://disi.unitn.it/~sebe/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person-card person-card-compact">
+                        <a class="person-media" href="https://faculty.ucmerced.edu/mhyang/" target="_blank"
+                            rel="noreferrer" aria-label="Ming-Hsuan Yang homepage">
+                            <img class="person-photo" src="assets/people/minghsuan.jpg"
+                                alt="Portrait of Ming-Hsuan Yang" loading="lazy">
+                        </a>
+                        <div class="person-copy">
+                            <h3><a class="person-name-link" href="https://faculty.ucmerced.edu/mhyang/" target="_blank"
+                                    rel="noreferrer">Ming-Hsuan Yang</a></h3>
+                            <p class="person-role">Professor, University of California, Merced, USA</p>
+                            <div class="person-actions">
+                                <a class="person-link" href="https://faculty.ucmerced.edu/mhyang/" target="_blank"
+                                    rel="noreferrer">Homepage</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-compact" id="contact">
+            <div class="wrapper">
+                <div class="contact-card">
+                    <div class="contact-copy">
+                        <p class="eyebrow">Contact</p>
+                        <h2>Inquiries and collaboration</h2>
+                        <p>
+                            For questions about invited talks, submissions, or future updates, please contact the
+                            organizing team through the primary contact below.
+                        </p>
+                    </div>
+                    <a class="button button-primary" href="mailto:shiqi.yang147.jp@gmail.com">Email Shiqi Yang</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrapper footer-inner">
+            <p>Efficient Visual Generation (EVG) | ECCV 2026 Workshop</p>
+            <p>Official homepage for the ECCV 2026 workshop on efficient visual and multimodal generation.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
