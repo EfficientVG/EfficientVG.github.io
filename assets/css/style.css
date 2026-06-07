@@ -406,7 +406,8 @@ ul {
 }
 
 .topics-grid,
-.people-grid {
+.people-grid,
+.edition-grid {
   display: grid;
   gap: 22px;
   margin-top: 30px;
@@ -424,8 +425,17 @@ ul {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.edition-grid {
+  grid-template-columns: minmax(0, 720px);
+}
+
+.industrial-grid {
+  grid-template-columns: minmax(0, 620px);
+}
+
 .topic-card,
-.person-card {
+.person-card,
+.edition-card {
   border-radius: var(--radius-lg);
   background: var(--surface);
   backdrop-filter: blur(10px);
@@ -435,6 +445,43 @@ ul {
   position: relative;
   overflow: hidden;
   padding: 28px;
+}
+
+.edition-card {
+  padding: 30px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.edition-card h3 {
+  margin-top: 14px;
+  font-size: 1.55rem;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.edition-card p:not(.topic-number) {
+  margin-top: 14px;
+  color: var(--muted);
+  line-height: 1.78;
+  text-wrap: pretty;
+}
+
+.edition-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.edition-meta span {
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 109, 105, 0.16);
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--teal-deep);
+  font-size: 0.88rem;
+  font-weight: 800;
 }
 
 .topic-card::before {
