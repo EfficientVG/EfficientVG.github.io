@@ -648,6 +648,32 @@ ul {
   font-weight: 600;
 }
 
+.person-talk {
+  grid-column: 1 / -1;
+  margin-top: 2px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 109, 105, 0.14);
+  background:
+    linear-gradient(135deg, rgba(15, 109, 105, 0.08), rgba(201, 109, 60, 0.08)),
+    rgba(255, 255, 255, 0.58);
+  color: var(--ink);
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.45;
+  text-wrap: balance;
+}
+
+.person-talk span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--teal);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .person-note {
   font-size: 0.95rem;
 }
