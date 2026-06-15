@@ -255,6 +255,56 @@ ul {
   display: block;
 }
 
+.submission-notice {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  max-width: 780px;
+  margin-top: 30px;
+  padding: 22px 28px 22px 84px;
+  border: 2px solid rgba(193, 45, 26, 0.82);
+  border-left-width: 10px;
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 237, 141, 0.98), rgba(255, 204, 191, 0.95)),
+    #fff0b8;
+  color: #50120c;
+  box-shadow: 0 22px 46px rgba(193, 45, 26, 0.22);
+}
+
+.submission-notice::before {
+  content: "!";
+  position: absolute;
+  left: 26px;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  background: #c12d1a;
+  color: #fffdf8;
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1;
+  transform: translateY(-50%);
+  box-shadow: 0 10px 20px rgba(193, 45, 26, 0.28);
+}
+
+.submission-notice-label {
+  color: #8d1f12;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.submission-notice strong {
+  font-size: clamp(1.08rem, 1.45vw, 1.32rem);
+  line-height: 1.18;
+  text-wrap: balance;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -813,6 +863,16 @@ ul {
 
   .button {
     width: 100%;
+  }
+
+  .submission-notice {
+    padding: 20px 18px 20px 68px;
+  }
+
+  .submission-notice::before {
+    left: 18px;
+    width: 34px;
+    height: 34px;
   }
 
   .person-card {
