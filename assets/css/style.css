@@ -691,6 +691,13 @@ ul {
   text-transform: uppercase;
 }
 
+.person-status-tentative {
+  background: rgba(201, 109, 60, 0.18);
+  border: 1px solid rgba(201, 109, 60, 0.28);
+  box-shadow: 0 8px 18px rgba(201, 109, 60, 0.14);
+  color: #a84d24;
+}
+
 .person-name-link {
   color: inherit;
 }
