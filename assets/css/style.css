@@ -492,7 +492,7 @@ ul {
 
 .topic-card,
 .person-card,
-.company-card,
+.industrial-card,
 .edition-card {
   border-radius: var(--radius-lg);
   background: var(--surface);
@@ -625,7 +625,7 @@ ul {
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
-.company-card {
+.industrial-card {
   display: grid;
   gap: 16px;
   padding: 24px;
@@ -635,14 +635,14 @@ ul {
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
-.company-header {
+.industrial-header {
   display: grid;
   grid-template-columns: 52px minmax(0, 1fr);
   gap: 14px;
   align-items: center;
 }
 
-.company-logo {
+.industrial-logo {
   display: grid;
   width: 52px;
   aspect-ratio: 1 / 1;
@@ -655,52 +655,45 @@ ul {
   box-shadow: 0 12px 24px rgba(23, 45, 58, 0.1);
 }
 
-.company-logo-image {
+.industrial-logo-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.company-copy {
+.industrial-copy {
   min-width: 0;
 }
 
-.company-copy h3 {
+.industrial-copy h3 {
   margin-top: 8px;
   font-size: 1.3rem;
   line-height: 1.25;
   text-wrap: balance;
 }
 
-.company-copy .person-status + h3 {
+.industrial-copy .person-status + h3 {
   margin-top: 8px;
 }
 
-.company-location {
-  margin-top: 4px;
-  color: var(--muted);
-  font-weight: 700;
-  line-height: 1.4;
-}
-
-.company-details {
+.industrial-details {
   display: grid;
   gap: 12px;
 }
 
-.company-speakers {
+.industrial-speakers {
   display: grid;
   gap: 10px;
 }
 
-.company-speaker-item {
+.industrial-speaker-item {
   display: grid;
   grid-template-columns: 48px minmax(0, 1fr);
   gap: 12px;
   align-items: center;
 }
 
-.company-speaker-avatar {
+.industrial-speaker-avatar {
   display: block;
   width: 48px;
   aspect-ratio: 1 / 1;
@@ -712,16 +705,18 @@ ul {
   box-shadow: 0 10px 20px rgba(23, 45, 58, 0.1);
 }
 
-.company-speaker-line,
-.company-talk-line {
+.industrial-speaker-line,
+.industrial-demo-line,
+.industrial-credit-line {
   color: var(--muted);
   font-weight: 700;
   line-height: 1.55;
   text-wrap: pretty;
 }
 
-.company-speaker-line span,
-.company-talk-line span {
+.industrial-speaker-line span,
+.industrial-demo-line span,
+.industrial-credit-line span {
   display: block;
   margin-bottom: 3px;
   color: var(--teal);
@@ -732,14 +727,24 @@ ul {
   text-transform: uppercase;
 }
 
-.company-speaker-line a {
+.industrial-speaker-line a {
   color: var(--ink);
   font-weight: 900;
 }
 
-.company-talk-line {
+.industrial-credit-line a {
+  color: var(--teal-deep);
+  font-weight: 900;
+}
+
+.industrial-demo-line {
   color: var(--ink);
   font-weight: 800;
+}
+
+.industrial-speaker-placeholder {
+  color: var(--muted);
+  font-weight: 700;
 }
 
 .person-card-compact {
@@ -749,8 +754,8 @@ ul {
 
 .person-card:hover,
 .person-card:focus-within,
-.company-card:hover,
-.company-card:focus-within {
+.industrial-card:hover,
+.industrial-card:focus-within {
   transform: translateY(-3px);
   border-color: rgba(15, 109, 105, 0.2);
   box-shadow: 0 28px 60px rgba(23, 45, 58, 0.16);
@@ -784,8 +789,8 @@ ul {
 
 .person-card:hover .person-photo,
 .person-card:focus-within .person-photo,
-.company-card:hover .person-photo,
-.company-card:focus-within .person-photo {
+.industrial-card:hover .person-photo,
+.industrial-card:focus-within .person-photo {
   transform: scale(1.04);
 }
 
@@ -1024,7 +1029,7 @@ ul {
   }
 
   .person-card,
-  .company-card {
+  .industrial-card {
     grid-template-columns: 1fr;
   }
 
@@ -1037,7 +1042,7 @@ ul {
   .panel,
   .topic-card,
   .person-card,
-  .company-card,
+  .industrial-card,
   .contact-card {
     border-radius: 24px;
   }
@@ -1046,7 +1051,7 @@ ul {
   .panel,
   .topic-card,
   .person-card,
-  .company-card,
+  .industrial-card,
   .contact-card {
     padding-left: 22px;
     padding-right: 22px;
