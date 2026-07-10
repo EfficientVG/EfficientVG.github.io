@@ -483,7 +483,7 @@ ul {
 }
 
 .edition-grid {
-  grid-template-columns: minmax(0, 720px);
+  grid-template-columns: minmax(0, 820px);
 }
 
 .industrial-grid {
@@ -506,40 +506,90 @@ ul {
 }
 
 .edition-card {
-  padding: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 28px;
+  padding: 30px 32px;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
 
+.edition-card-link {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.edition-card-link::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -72px;
+  bottom: -100px;
+  width: 260px;
+  height: 260px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(15, 109, 105, 0.14), transparent 68%);
+}
+
+.edition-card-link:hover,
+.edition-card-link:focus-visible {
+  border-color: rgba(15, 109, 105, 0.28);
+  box-shadow: 0 28px 60px rgba(23, 45, 58, 0.16);
+  transform: translateY(-3px);
+}
+
+.edition-card-link:focus-visible {
+  outline: 3px solid rgba(15, 109, 105, 0.34);
+  outline-offset: 4px;
+}
+
 .edition-card h3 {
-  margin-top: 14px;
+  margin-top: 12px;
   font-size: 1.55rem;
   line-height: 1.25;
   text-wrap: balance;
 }
 
-.edition-card p:not(.topic-number) {
+.edition-card p {
   margin-top: 14px;
   color: var(--muted);
   line-height: 1.78;
   text-wrap: pretty;
 }
 
-.edition-meta {
-  display: flex;
-  flex-wrap: wrap;
+.edition-link-label {
+  display: inline-flex;
+  align-items: center;
   gap: 10px;
-  margin-top: 18px;
-}
-
-.edition-meta span {
-  padding: 9px 12px;
+  min-height: 44px;
+  padding: 0 16px;
   border-radius: 999px;
   border: 1px solid rgba(15, 109, 105, 0.16);
-  background: rgba(255, 255, 255, 0.56);
+  background: rgba(255, 255, 255, 0.7);
   color: var(--teal-deep);
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   font-weight: 800;
+  white-space: nowrap;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.edition-link-label span {
+  font-size: 1.2em;
+  transition: transform 180ms ease;
+}
+
+.edition-card-link:hover .edition-link-label,
+.edition-card-link:focus-visible .edition-link-label {
+  background: var(--teal-deep);
+  color: #fbfaf7;
+}
+
+.edition-card-link:hover .edition-link-label span,
+.edition-card-link:focus-visible .edition-link-label span {
+  transform: translateX(3px);
 }
 
 .topic-card::before {
@@ -999,6 +1049,12 @@ ul {
   .organizers-grid {
     grid-template-columns: 1fr;
   }
+
+  .edition-card {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1055,5 +1111,10 @@ ul {
   .contact-card {
     padding-left: 22px;
     padding-right: 22px;
+  }
+
+  .edition-card {
+    padding: 24px 22px;
+    border-radius: 24px;
   }
 }
