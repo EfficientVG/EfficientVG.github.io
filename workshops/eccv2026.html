@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10142c">
     <title>Efficient Visual Generation | ECCV 2026 Workshop</title>
     <meta name="description"
         content="Efficient Visual Generation (EVG): the ECCV 2026 workshop on efficient generative models for visual and multimodal generation.">
@@ -15,11 +16,15 @@
     <meta property="og:description"
         content="The ECCV 2026 workshop on efficient generative models for visual and multimodal generation.">
     <meta property="og:url" content="https://efficientvg.github.io/workshops/eccv2026.html">
+    <meta property="og:image" content="https://efficientvg.github.io/assets/og/og-eccv2026.png">
+    <meta property="og:image:width" content="2400">
+    <meta property="og:image:height" content="1260">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Efficient Visual Generation | ECCV 2026 Workshop">
     <meta name="twitter:description"
         content="The ECCV 2026 workshop on efficient generative models for visual and multimodal generation.">
+    <meta name="twitter:image" content="https://efficientvg.github.io/assets/og/og-eccv2026.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,10 +34,11 @@
 
     <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../assets/favicon.svg">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260715-program">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260718-dark">
 </head>
 
 <body>
+    <a class="skip-link" href="#top">Skip to content</a>
     <header class="site-header">
         <div class="wrapper site-header-inner">
             <a class="brand" href="../index.html" aria-label="Efficient Visual Generation series home">
@@ -59,6 +65,7 @@
         <section class="hero">
             <div class="wrapper hero-grid hero-grid-single">
                 <div class="hero-copy">
+                    <div class="hero-orb" aria-hidden="true"></div>
                     <p class="eyebrow">ECCV 2026 Official Workshop</p>
                     <h1>Efficient Visual Generation</h1>
                     <p class="hero-lede">
@@ -72,6 +79,7 @@
 
                     <ul class="hero-tags" aria-label="Workshop details">
                         <li>Workshop time: <time datetime="2026-09-08">Sep 8 afternoon</time> (CEST)</li>
+                        <li>ECCV 2026 · Malmö, Sweden</li>
                     </ul>
 
                     <div class="submission-notice" role="note"
@@ -93,7 +101,7 @@
             <div class="wrapper">
                 <div class="section-intro">
                     <p class="eyebrow">Overview</p>
-
+                    <h2>Why efficiency matters now</h2>
                 </div>
 
                 <div class="overview-grid overview-grid-single">
@@ -143,7 +151,7 @@
 
                 <div class="people-grid speaker-grid">
                     <article class="person-card">
-                        <a class="person-media" href="https://chechiklab.biu.ac.il/~gal/" target="_blank"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://chechiklab.biu.ac.il/~gal/" target="_blank"
                             rel="noreferrer" aria-label="Gal Chechik homepage">
                             <img class="person-photo" src="../assets/people/gal.jpg" alt="Portrait of Gal Chechik"
                                 loading="lazy">
@@ -163,7 +171,7 @@
                     </article>
 
                     <article class="person-card">
-                        <a class="person-media" href="https://zhenxuan00.github.io/" target="_blank" rel="noreferrer"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://zhenxuan00.github.io/" target="_blank" rel="noreferrer"
                             aria-label="Chongxuan Li homepage">
                             <img class="person-photo" src="../assets/people/chongxuan.png" alt="Portrait of Chongxuan Li"
                                 loading="lazy">
@@ -182,13 +190,13 @@
                     </article>
 
                     <article class="person-card">
-                        <a class="person-media" href="https://huanwang.tech/" target="_blank" rel="noreferrer"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://huanwang.tech/" target="_blank" rel="noreferrer"
                             aria-label="Huan Wang homepage">
                             <img class="person-photo" src="../assets/people/huan.png" alt="Portrait of Huan Wang"
                                 loading="lazy">
                         </a>
                         <div class="person-copy">
-                            <span class="person-status">Organizer Talk</span>
+                            <span class="person-status person-status-organizer">Organizer Talk</span>
                             <h3><a class="person-name-link" href="https://huanwang.tech/" target="_blank"
                                     rel="noreferrer">Huan Wang</a></h3>
                             <p class="person-role">Assistant Professor, Westlake University, China</p>
@@ -219,7 +227,7 @@
                                     alt="Runway logo" loading="lazy">
                             </a>
                             <div class="industrial-copy company-copy">
-                                <span class="person-status">Industrial Demo</span>
+                                <span class="person-status person-status-demo">Industrial Demo</span>
                                 <h3><a class="person-name-link" href="https://runwayml.com/product/characters"
                                         target="_blank" rel="noreferrer">Runway Characters</a></h3>
                             </div>
@@ -238,7 +246,7 @@
 
                             <div class="industrial-speakers company-speakers" aria-label="Runway Characters speakers">
                                 <div class="industrial-speaker-item company-speaker-item">
-                                    <a class="industrial-speaker-avatar company-speaker-avatar"
+                                    <a class="industrial-speaker-avatar company-speaker-avatar" tabindex="-1" aria-hidden="true"
                                         href="https://khakhulin.github.io/" target="_blank" rel="noreferrer"
                                         aria-label="Taras Khakhulin homepage">
                                         <img class="person-photo" src="../assets/people/TarasKhakhulin.jpeg"
@@ -262,7 +270,7 @@
                                     alt="MIRA logo" loading="lazy">
                             </a>
                             <div class="industrial-copy company-copy">
-                                <span class="person-status">Industrial Demo</span>
+                                <span class="person-status person-status-demo">Industrial Demo</span>
                                 <h3><a class="person-name-link" href="https://mira-wm.com/" target="_blank"
                                         rel="noreferrer">MIRA</a></h3>
                             </div>
@@ -286,7 +294,7 @@
 
                             <div class="industrial-speakers company-speakers" aria-label="MIRA speakers">
                                 <div class="industrial-speaker-item company-speaker-item">
-                                    <a class="industrial-speaker-avatar company-speaker-avatar"
+                                    <a class="industrial-speaker-avatar company-speaker-avatar" tabindex="-1" aria-hidden="true"
                                         href="https://www.linkedin.com/in/adrien-ramanana-rahary/?locale=en"
                                         target="_blank" rel="noreferrer" aria-label="Adrien Ramanana Rahary LinkedIn">
                                         <img class="person-photo" src="../assets/people/adrien-ramanana-rahary.jpg"
@@ -301,7 +309,7 @@
                                 </div>
 
                                 <div class="industrial-speaker-item company-speaker-item">
-                                    <a class="industrial-speaker-avatar company-speaker-avatar"
+                                    <a class="industrial-speaker-avatar company-speaker-avatar" tabindex="-1" aria-hidden="true"
                                         href="https://vvolhejn.com/" target="_blank" rel="noreferrer"
                                         aria-label="Václav Volhejn homepage">
                                         <img class="person-photo" src="../assets/people/vaclav-volhejn.jpg"
@@ -435,12 +443,12 @@
             <div class="wrapper">
                 <div class="section-intro">
                     <p class="eyebrow">Organizers</p>
-
+                    <h2>Organizing team</h2>
                 </div>
 
                 <div class="people-grid organizers-grid">
                     <article class="person-card person-card-compact">
-                        <a class="person-media" href="https://albert0147.github.io/" target="_blank" rel="noreferrer"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://albert0147.github.io/" target="_blank" rel="noreferrer"
                             aria-label="Shiqi Yang homepage">
                             <img class="person-photo" src="../assets/people/shiqi.jpg" alt="Portrait of Shiqi Yang"
                                 loading="lazy">
@@ -458,7 +466,7 @@
                     </article>
 
                     <article class="person-card person-card-compact">
-                        <a class="person-media" href="https://sen-mao.github.io/" target="_blank" rel="noreferrer"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://sen-mao.github.io/" target="_blank" rel="noreferrer"
                             aria-label="Senmao Li homepage">
                             <img class="person-photo" src="../assets/people/senmao.png" alt="Portrait of Senmao Li"
                                 loading="lazy">
@@ -475,7 +483,7 @@
                     </article>
 
                     <article class="person-card person-card-compact">
-                        <a class="person-media" href="https://kellyyutonghe.github.io/" target="_blank" rel="noreferrer"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://kellyyutonghe.github.io/" target="_blank" rel="noreferrer"
                             aria-label="Yutong He homepage">
                             <img class="person-photo" src="../assets/people/yutong.jpg" alt="Portrait of Yutong He"
                                 loading="lazy">
@@ -492,7 +500,7 @@
                     </article>
 
                     <article class="person-card person-card-compact">
-                        <a class="person-media" href="https://sauravjha.com.np/" target="_blank" rel="noreferrer"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://sauravjha.com.np/" target="_blank" rel="noreferrer"
                             aria-label="Saurav Jha homepage">
                             <img class="person-photo" src="../assets/people/saurav.jpg" alt="Portrait of Saurav Jha"
                                 loading="lazy">
@@ -509,7 +517,7 @@
                     </article>
 
                     <article class="person-card person-card-compact">
-                        <a class="person-media" href="https://wangkai930418.github.io/" target="_blank" rel="noreferrer"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://wangkai930418.github.io/" target="_blank" rel="noreferrer"
                             aria-label="Kai Wang homepage">
                             <img class="person-photo" src="../assets/people/kai.jpg" alt="Portrait of Kai Wang"
                                 loading="lazy">
@@ -527,7 +535,7 @@
                     </article>
 
                     <article class="person-card person-card-compact">
-                        <a class="person-media" href="https://huanwang.tech/" target="_blank" rel="noreferrer"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://huanwang.tech/" target="_blank" rel="noreferrer"
                             aria-label="Huan Wang homepage">
                             <img class="person-photo" src="../assets/people/huan.png" alt="Portrait of Huan Wang"
                                 loading="lazy">
@@ -544,7 +552,7 @@
                     </article>
 
                     <article class="person-card person-card-compact">
-                        <a class="person-media" href="https://yaxingwang.github.io/" target="_blank" rel="noreferrer"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://yaxingwang.github.io/" target="_blank" rel="noreferrer"
                             aria-label="Yaxing Wang homepage">
                             <img class="person-photo" src="../assets/people/yaxing.jpg" alt="Portrait of Yaxing Wang"
                                 loading="lazy">
@@ -561,7 +569,7 @@
                     </article>
 
                     <article class="person-card person-card-compact">
-                        <a class="person-media" href="http://lamp.cvc.uab.es/" target="_blank" rel="noreferrer"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="http://lamp.cvc.uab.es/" target="_blank" rel="noreferrer"
                             aria-label="Joost van de Weijer homepage">
                             <img class="person-photo" src="../assets/people/joost.png"
                                 alt="Portrait of Joost van de Weijer" loading="lazy">
@@ -578,7 +586,7 @@
                     </article>
 
                     <article class="person-card person-card-compact">
-                        <a class="person-media" href="https://disi.unitn.it/~sebe/" target="_blank" rel="noreferrer"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://disi.unitn.it/~sebe/" target="_blank" rel="noreferrer"
                             aria-label="Nicu Sebe homepage">
                             <img class="person-photo" src="../assets/people/nicu.png" alt="Portrait of Nicu Sebe"
                                 loading="lazy">
@@ -595,7 +603,7 @@
                     </article>
 
                     <article class="person-card person-card-compact">
-                        <a class="person-media" href="https://faculty.ucmerced.edu/mhyang/" target="_blank"
+                        <a class="person-media" tabindex="-1" aria-hidden="true" href="https://faculty.ucmerced.edu/mhyang/" target="_blank"
                             rel="noreferrer" aria-label="Ming-Hsuan Yang homepage">
                             <img class="person-photo" src="../assets/people/minghsuan.jpg"
                                 alt="Portrait of Ming-Hsuan Yang" loading="lazy">
