@@ -277,7 +277,7 @@ ul {
 }
 
 .hero-grid-single {
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1120px);
 }
 
 .hero-copy,
@@ -578,7 +578,7 @@ ul {
 }
 
 .overview-grid-single {
-  grid-template-columns: minmax(0, 1080px);
+  grid-template-columns: minmax(0, 900px);
 }
 
 .panel {
